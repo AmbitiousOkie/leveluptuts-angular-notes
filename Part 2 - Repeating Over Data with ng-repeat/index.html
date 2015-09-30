@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>AngularJS For Everyone</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+
+</head>
+<body ng-init="list = [{name:'Scott', ange: 29},{name:'Courtney', age: 29}]">
+	<ul>
+		<li ng-repeat="item in list">
+			{{item.name}} - <em>{{item.age}}</em>
+		</li>
+	</ul>
+
+</body>
+</html>
