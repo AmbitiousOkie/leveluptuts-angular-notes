@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+		<title>AngularJS For Everyone</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+
+	</head>
+	<body ng-init="list = [{name:'Scott', ange: 29},{name:'Ross', age: 31},{name:'Ben', ange: 32},{name:'Courtney', age: 29}]">
+		<input type="text" ng-model="search">
+		<ul>
+			<li ng-repeat="item in list | filter:search">
+				{{item.name}} - <em>{{item.age}}</em>
+			</li>
+		</ul>
+
+	</body>
+</html>
