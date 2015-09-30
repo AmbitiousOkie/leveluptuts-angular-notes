@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="directoryApp">
 	<head>
 		<title>AngularJS For Everyone</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+		<script src="directory.js"></script>
 
 	</head>
-	<body ng-init="list = [{name:'Scott', age: 29},{name:'Ross', age: 31},{name:'Ben', age: 32},{name:'Courtney', age: 29}]">
+	<body ng-controller="directoryController">
 		<input type="text" ng-model="search">
 		<ul>
 			<li ng-repeat="item in list | filter:search">
